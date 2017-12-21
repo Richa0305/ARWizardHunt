@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA08F8E91F8E7382005D9C29 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F8E81F8E7382005D9C29 /* DesignableLabel.swift */; };
+		EA08F8EB1F8F2FFA005D9C29 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F8EA1F8F2FFA005D9C29 /* DesignableView.swift */; };
+		EA08F8ED1F8F35D5005D9C29 /* Level1GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F8EC1F8F35D5005D9C29 /* Level1GameModeViewController.swift */; };
+		EA1C8CC31F8C9B610050469F /* HARRYP__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = EA1C8CC21F8C96FB0050469F /* HARRYP__.TTF */; };
+		EA1C8CC41F8C9B610050469F /* ParryHotter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA1C8CC11F8C95F30050469F /* ParryHotter.ttf */; };
+		EA30B5D41F93A1320070BC25 /* Snow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30B5D31F93A1320070BC25 /* Snow.swift */; };
+		EA30B5D51F93A1A60070BC25 /* Snow.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA30B5D31F93A1320070BC25 /* Snow.swift */; };
+		EA30B5D81F93A9D80070BC25 /* Snow.scnp in Resources */ = {isa = PBXBuildFile; fileRef = EA30B5D61F93A9D80070BC25 /* Snow.scnp */; };
+		EA30B5D91F93A9D80070BC25 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = EA30B5D71F93A9D80070BC25 /* confetti.png */; };
+		EA30B5DF1F94AF270070BC25 /* IdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30B5DE1F94AF270070BC25 /* IdeasViewController.swift */; };
+		EA30B5E31F94B2B90070BC25 /* DesignableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30B5E21F94B2B90070BC25 /* DesignableImage.swift */; };
+		EA30B6071F94C5440070BC25 /* SpriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30B6061F94C5440070BC25 /* SpriteViewController.swift */; };
+		EA30B60A1F94C6070070BC25 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30B6081F94C6070070BC25 /* Scene.swift */; };
+		EA30B60B1F94C61B0070BC25 /* DesignableImage.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA30B5E21F94B2B90070BC25 /* DesignableImage.swift */; };
+		EA30B60C1F94C61B0070BC25 /* IdeasViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA30B5DE1F94AF270070BC25 /* IdeasViewController.swift */; };
+		EA30B60D1F94C61B0070BC25 /* SpriteViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA30B6061F94C5440070BC25 /* SpriteViewController.swift */; };
+		EA30B60E1F94C61B0070BC25 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA30B6091F94C6070070BC25 /* Scene.sks */; };
+		EA30B60F1F94C61B0070BC25 /* Scene.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA30B6081F94C6070070BC25 /* Scene.swift */; };
+		EA3D52FA1F929F7B00BFB42D /* SpeechRecogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3D52F91F929F7B00BFB42D /* SpeechRecogViewController.swift */; };
+		EA3D52FB1F92A1CF00BFB42D /* SpeechRecogViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA3D52F91F929F7B00BFB42D /* SpeechRecogViewController.swift */; };
+		EA3D52FD1F932A0400BFB42D /* AcousticModelEnglish.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3D52FC1F932A0400BFB42D /* AcousticModelEnglish.bundle */; };
+		EA3D52FE1F932AAE00BFB42D /* ARWizardHunt-Bridging-Header.h in Resources */ = {isa = PBXBuildFile; fileRef = EAB989A61F928EBB00C6080C /* ARWizardHunt-Bridging-Header.h */; };
+		EA3D52FF1F932AAE00BFB42D /* DesignableButton.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA08F8E71F8E7349005D9C29 /* DesignableButton.swift */; };
+		EA3D53001F932AAE00BFB42D /* DesignableLabel.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA08F8E81F8E7382005D9C29 /* DesignableLabel.swift */; };
+		EA3D53011F932AAE00BFB42D /* DesignableView.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA08F8EA1F8F2FFA005D9C29 /* DesignableView.swift */; };
+		EA3D53021F932AAE00BFB42D /* Level1GameModeViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA08F8EC1F8F35D5005D9C29 /* Level1GameModeViewController.swift */; };
+		EA3D53031F932AAE00BFB42D /* PageViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAB989991F913F8200C6080C /* PageViewController.swift */; };
+		EA3D53041F932AAE00BFB42D /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA3D52FC1F932A0400BFB42D /* AcousticModelEnglish.bundle */; };
+		EA3D53051F932ABA00BFB42D /* Framework in Resources */ = {isa = PBXBuildFile; fileRef = EAB989A91F92904E00C6080C /* Framework */; };
+		EA7F70FC1F91150D0013762F /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F70FB1F91150D0013762F /* Emitter.swift */; };
+		EA7F70FD1F9115960013762F /* Emitter.swift in Resources */ = {isa = PBXBuildFile; fileRef = EA7F70FB1F91150D0013762F /* Emitter.swift */; };
+		EA808D261F8E4582004AE519 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC24C1F88C117000DF4F4 /* Info.plist */; };
+		EA808D271F8E4582004AE519 /* WelcomeViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC2621F8B4E25000DF4F4 /* WelcomeViewController.swift */; };
+		EA808D281F8E4582004AE519 /* Level1ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC2601F8AA36B000DF4F4 /* Level1ViewController.swift */; };
+		EA808D291F8E4582004AE519 /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC2421F88C117000DF4F4 /* ViewController.swift */; };
+		EA808D2A1F8E4582004AE519 /* PlaySound.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAC4FECA1F8D31720043C878 /* PlaySound.swift */; };
+		EA808D2B1F8E4582004AE519 /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC23E1F88C117000DF4F4 /* AppDelegate.swift */; };
+		EA808D2C1F8E4582004AE519 /* MagicSchoolOne.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA808D241F8E455D004AE519 /* MagicSchoolOne.ttf */; };
+		EA808D2D1F8E4582004AE519 /* MagicSchoolTwo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA808D251F8E455D004AE519 /* MagicSchoolTwo.ttf */; };
+		EA8B11BE1FD1B730003060EB /* SpellTestGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B11BD1FD1B730003060EB /* SpellTestGameViewController.swift */; };
+		EA9059241FE3CD02005A392F /* Game-Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA9059221FE3CD02005A392F /* Game-Music.mp3 */; };
+		EA9059251FE3CD02005A392F /* Fly-Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA9059231FE3CD02005A392F /* Fly-Music.mp3 */; };
+		EA9059271FE3D078005A392F /* AddGamePoints.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA9059261FE3D078005A392F /* AddGamePoints.wav */; };
+		EA9059291FE3D0FD005A392F /* PointsLost.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA9059281FE3D0FD005A392F /* PointsLost.wav */; };
+		EAAAC23F1F88C117000DF4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAAC23E1F88C117000DF4F4 /* AppDelegate.swift */; };
+		EAAAC2411F88C117000DF4F4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC2401F88C117000DF4F4 /* art.scnassets */; };
+		EAAAC2431F88C117000DF4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAAC2421F88C117000DF4F4 /* ViewController.swift */; };
+		EAAAC2461F88C117000DF4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC2441F88C117000DF4F4 /* Main.storyboard */; };
+		EAAAC2481F88C117000DF4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC2471F88C117000DF4F4 /* Assets.xcassets */; };
+		EAAAC24B1F88C117000DF4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAAC2491F88C117000DF4F4 /* LaunchScreen.storyboard */; };
+		EAAAC2611F8AA36B000DF4F4 /* Level1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAAC2601F8AA36B000DF4F4 /* Level1ViewController.swift */; };
+		EAAAC2631F8B4E25000DF4F4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAAC2621F8B4E25000DF4F4 /* WelcomeViewController.swift */; };
+		EAB9899A1F913F8200C6080C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB989991F913F8200C6080C /* PageViewController.swift */; };
+		EAB9899C1F92259E00C6080C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB9899B1F92259E00C6080C /* SpeechRecognizer.swift */; };
+		EAB9899D1F9226DF00C6080C /* SpeechRecognizer.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAB9899B1F92259E00C6080C /* SpeechRecognizer.swift */; };
+		EAB989A21F928DC300C6080C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB989A11F928DC300C6080C /* AudioToolbox.framework */; };
+		EAB989A41F928DCD00C6080C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB989A31F928DCD00C6080C /* AVFoundation.framework */; };
+		EAB989AC1F9291E700C6080C /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB989AA1F9291E700C6080C /* Slt.framework */; };
+		EAB989AD1F9291E700C6080C /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB989AB1F9291E700C6080C /* OpenEars.framework */; };
+		EAC4FECB1F8D31720043C878 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC4FECA1F8D31720043C878 /* PlaySound.swift */; };
+		EAC4FECF1F8D3B2A0043C878 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAC4FEC81F8D2C080043C878 /* explosion.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA08F8E71F8E7349005D9C29 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		EA08F8E81F8E7382005D9C29 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		EA08F8EA1F8F2FFA005D9C29 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		EA08F8EC1F8F35D5005D9C29 /* Level1GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1GameModeViewController.swift; sourceTree = "<group>"; };
+		EA1C8CC11F8C95F30050469F /* ParryHotter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ParryHotter.ttf; sourceTree = "<group>"; };
+		EA1C8CC21F8C96FB0050469F /* HARRYP__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = HARRYP__.TTF; sourceTree = "<group>"; };
+		EA30B5D31F93A1320070BC25 /* Snow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snow.swift; sourceTree = "<group>"; };
+		EA30B5D61F93A9D80070BC25 /* Snow.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Snow.scnp; sourceTree = "<group>"; };
+		EA30B5D71F93A9D80070BC25 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		EA30B5DE1F94AF270070BC25 /* IdeasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasViewController.swift; sourceTree = "<group>"; };
+		EA30B5E21F94B2B90070BC25 /* DesignableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImage.swift; sourceTree = "<group>"; };
+		EA30B6061F94C5440070BC25 /* SpriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteViewController.swift; sourceTree = "<group>"; };
+		EA30B6081F94C6070070BC25 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		EA30B6091F94C6070070BC25 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		EA3D52F91F929F7B00BFB42D /* SpeechRecogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecogViewController.swift; sourceTree = "<group>"; };
+		EA3D52FC1F932A0400BFB42D /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AcousticModelEnglish.bundle; path = Framework/AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		EA7F70FB1F91150D0013762F /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
+		EA808D241F8E455D004AE519 /* MagicSchoolOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MagicSchoolOne.ttf; sourceTree = "<group>"; };
+		EA808D251F8E455D004AE519 /* MagicSchoolTwo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MagicSchoolTwo.ttf; sourceTree = "<group>"; };
+		EA8B11BD1FD1B730003060EB /* SpellTestGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellTestGameViewController.swift; sourceTree = "<group>"; };
+		EA9059221FE3CD02005A392F /* Game-Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Game-Music.mp3"; sourceTree = "<group>"; };
+		EA9059231FE3CD02005A392F /* Fly-Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fly-Music.mp3"; sourceTree = "<group>"; };
+		EA9059261FE3D078005A392F /* AddGamePoints.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AddGamePoints.wav; sourceTree = "<group>"; };
+		EA9059281FE3D0FD005A392F /* PointsLost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PointsLost.wav; sourceTree = "<group>"; };
+		EAAAC23B1F88C117000DF4F4 /* WizHead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WizHead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAAC23E1F88C117000DF4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAAAC2401F88C117000DF4F4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		EAAAC2421F88C117000DF4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAAAC2451F88C117000DF4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAAAC2471F88C117000DF4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAAAC24A1F88C117000DF4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAAAC24C1F88C117000DF4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAAC2601F8AA36B000DF4F4 /* Level1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1ViewController.swift; sourceTree = "<group>"; };
+		EAAAC2621F8B4E25000DF4F4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		EAB989991F913F8200C6080C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EAB9899B1F92259E00C6080C /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		EAB989A11F928DC300C6080C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EAB989A31F928DCD00C6080C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EAB989A61F928EBB00C6080C /* ARWizardHunt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARWizardHunt-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAB989A91F92904E00C6080C /* Framework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Framework; sourceTree = "<group>"; };
+		EAB989AA1F9291E700C6080C /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Slt.framework; path = Framework/Slt.framework; sourceTree = "<group>"; };
+		EAB989AB1F9291E700C6080C /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEars.framework; path = Framework/OpenEars.framework; sourceTree = "<group>"; };
+		EAC4FEC81F8D2C080043C878 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		EAC4FECA1F8D31720043C878 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAAAC2381F88C117000DF4F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3D52FD1F932A0400BFB42D /* AcousticModelEnglish.bundle in Frameworks */,
+				EAB989AC1F9291E700C6080C /* Slt.framework in Frameworks */,
+				EAB989AD1F9291E700C6080C /* OpenEars.framework in Frameworks */,
+				EAB989A41F928DCD00C6080C /* AVFoundation.framework in Frameworks */,
+				EAB989A21F928DC300C6080C /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA08F8E61F8E72F6005D9C29 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				EA08F8E71F8E7349005D9C29 /* DesignableButton.swift */,
+				EA08F8E81F8E7382005D9C29 /* DesignableLabel.swift */,
+				EA08F8EA1F8F2FFA005D9C29 /* DesignableView.swift */,
+				EA30B5E21F94B2B90070BC25 /* DesignableImage.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		EA1C8CC01F8C95E80050469F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA9059231FE3CD02005A392F /* Fly-Music.mp3 */,
+				EA9059281FE3D0FD005A392F /* PointsLost.wav */,
+				EA9059261FE3D078005A392F /* AddGamePoints.wav */,
+				EA9059221FE3CD02005A392F /* Game-Music.mp3 */,
+				EAC4FEC81F8D2C080043C878 /* explosion.mp3 */,
+				EAAAC2471F88C117000DF4F4 /* Assets.xcassets */,
+				EAAAC2401F88C117000DF4F4 /* art.scnassets */,
+				EA1C8CC21F8C96FB0050469F /* HARRYP__.TTF */,
+				EA808D241F8E455D004AE519 /* MagicSchoolOne.ttf */,
+				EA808D251F8E455D004AE519 /* MagicSchoolTwo.ttf */,
+				EA1C8CC11F8C95F30050469F /* ParryHotter.ttf */,
+				EA30B5D61F93A9D80070BC25 /* Snow.scnp */,
+				EA30B5D71F93A9D80070BC25 /* confetti.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAAAC2321F88C117000DF4F4 = {
+			isa = PBXGroup;
+			children = (
+				EAB989A91F92904E00C6080C /* Framework */,
+				EAAAC23D1F88C117000DF4F4 /* ARWizardHunt */,
+				EAAAC23C1F88C117000DF4F4 /* Products */,
+				EAB989A01F928DC200C6080C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAAAC23C1F88C117000DF4F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAAAC23B1F88C117000DF4F4 /* WizHead.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAAAC23D1F88C117000DF4F4 /* ARWizardHunt */ = {
+			isa = PBXGroup;
+			children = (
+				EAB989A61F928EBB00C6080C /* ARWizardHunt-Bridging-Header.h */,
+				EA08F8E61F8E72F6005D9C29 /* Designables */,
+				EAAAC24C1F88C117000DF4F4 /* Info.plist */,
+				EAC4FECD1F8D31A80043C878 /* Storyboard */,
+				EAC4FECC1F8D31870043C878 /* ViewControllers */,
+				EAC4FEC91F8D314B0043C878 /* SupportingFiles */,
+				EA1C8CC01F8C95E80050469F /* Resources */,
+			);
+			path = ARWizardHunt;
+			sourceTree = "<group>";
+		};
+		EAB989A01F928DC200C6080C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA3D52FC1F932A0400BFB42D /* AcousticModelEnglish.bundle */,
+				EAB989AB1F9291E700C6080C /* OpenEars.framework */,
+				EAB989AA1F9291E700C6080C /* Slt.framework */,
+				EAB989A31F928DCD00C6080C /* AVFoundation.framework */,
+				EAB989A11F928DC300C6080C /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC4FEC91F8D314B0043C878 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA30B6091F94C6070070BC25 /* Scene.sks */,
+				EA30B6081F94C6070070BC25 /* Scene.swift */,
+				EA7F70FB1F91150D0013762F /* Emitter.swift */,
+				EAC4FECA1F8D31720043C878 /* PlaySound.swift */,
+				EAAAC23E1F88C117000DF4F4 /* AppDelegate.swift */,
+				EAB9899B1F92259E00C6080C /* SpeechRecognizer.swift */,
+				EA30B5D31F93A1320070BC25 /* Snow.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EAC4FECC1F8D31870043C878 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAAAC2621F8B4E25000DF4F4 /* WelcomeViewController.swift */,
+				EAAAC2601F8AA36B000DF4F4 /* Level1ViewController.swift */,
+				EAAAC2421F88C117000DF4F4 /* ViewController.swift */,
+				EA08F8EC1F8F35D5005D9C29 /* Level1GameModeViewController.swift */,
+				EAB989991F913F8200C6080C /* PageViewController.swift */,
+				EA3D52F91F929F7B00BFB42D /* SpeechRecogViewController.swift */,
+				EA30B5DE1F94AF270070BC25 /* IdeasViewController.swift */,
+				EA30B6061F94C5440070BC25 /* SpriteViewController.swift */,
+				EA8B11BD1FD1B730003060EB /* SpellTestGameViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EAC4FECD1F8D31A80043C878 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EAAAC2491F88C117000DF4F4 /* LaunchScreen.storyboard */,
+				EAAAC2441F88C117000DF4F4 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAAAC23A1F88C117000DF4F4 /* ARWizardHunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAAC24F1F88C118000DF4F4 /* Build configuration list for PBXNativeTarget "ARWizardHunt" */;
+			buildPhases = (
+				EAAAC2371F88C117000DF4F4 /* Sources */,
+				EAAAC2381F88C117000DF4F4 /* Frameworks */,
+				EAAAC2391F88C117000DF4F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARWizardHunt;
+			productName = ARWizardHunt;
+			productReference = EAAAC23B1F88C117000DF4F4 /* WizHead.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAAAC2331F88C117000DF4F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Srivastava, Richa";
+				TargetAttributes = {
+					EAAAC23A1F88C117000DF4F4 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EAAAC2361F88C117000DF4F4 /* Build configuration list for PBXProject "ARWizardHunt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAAAC2321F88C117000DF4F4;
+			productRefGroup = EAAAC23C1F88C117000DF4F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAAC23A1F88C117000DF4F4 /* ARWizardHunt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAAAC2391F88C117000DF4F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA30B60B1F94C61B0070BC25 /* DesignableImage.swift in Resources */,
+				EA30B60C1F94C61B0070BC25 /* IdeasViewController.swift in Resources */,
+				EA30B60D1F94C61B0070BC25 /* SpriteViewController.swift in Resources */,
+				EA30B60E1F94C61B0070BC25 /* Scene.sks in Resources */,
+				EA30B60F1F94C61B0070BC25 /* Scene.swift in Resources */,
+				EA30B5D51F93A1A60070BC25 /* Snow.swift in Resources */,
+				EA3D53051F932ABA00BFB42D /* Framework in Resources */,
+				EA30B5D91F93A9D80070BC25 /* confetti.png in Resources */,
+				EA3D52FE1F932AAE00BFB42D /* ARWizardHunt-Bridging-Header.h in Resources */,
+				EA3D52FF1F932AAE00BFB42D /* DesignableButton.swift in Resources */,
+				EA3D53001F932AAE00BFB42D /* DesignableLabel.swift in Resources */,
+				EA3D53011F932AAE00BFB42D /* DesignableView.swift in Resources */,
+				EA3D53021F932AAE00BFB42D /* Level1GameModeViewController.swift in Resources */,
+				EA3D53031F932AAE00BFB42D /* PageViewController.swift in Resources */,
+				EA3D53041F932AAE00BFB42D /* AcousticModelEnglish.bundle in Resources */,
+				EA9059291FE3D0FD005A392F /* PointsLost.wav in Resources */,
+				EA3D52FB1F92A1CF00BFB42D /* SpeechRecogViewController.swift in Resources */,
+				EAB9899D1F9226DF00C6080C /* SpeechRecognizer.swift in Resources */,
+				EA7F70FD1F9115960013762F /* Emitter.swift in Resources */,
+				EA808D261F8E4582004AE519 /* Info.plist in Resources */,
+				EA9059271FE3D078005A392F /* AddGamePoints.wav in Resources */,
+				EA808D271F8E4582004AE519 /* WelcomeViewController.swift in Resources */,
+				EA808D281F8E4582004AE519 /* Level1ViewController.swift in Resources */,
+				EA808D291F8E4582004AE519 /* ViewController.swift in Resources */,
+				EA808D2A1F8E4582004AE519 /* PlaySound.swift in Resources */,
+				EA808D2B1F8E4582004AE519 /* AppDelegate.swift in Resources */,
+				EA30B5D81F93A9D80070BC25 /* Snow.scnp in Resources */,
+				EA808D2C1F8E4582004AE519 /* MagicSchoolOne.ttf in Resources */,
+				EA808D2D1F8E4582004AE519 /* MagicSchoolTwo.ttf in Resources */,
+				EAC4FECF1F8D3B2A0043C878 /* explosion.mp3 in Resources */,
+				EA1C8CC31F8C9B610050469F /* HARRYP__.TTF in Resources */,
+				EA1C8CC41F8C9B610050469F /* ParryHotter.ttf in Resources */,
+				EAAAC2411F88C117000DF4F4 /* art.scnassets in Resources */,
+				EAAAC24B1F88C117000DF4F4 /* LaunchScreen.storyboard in Resources */,
+				EA9059251FE3CD02005A392F /* Fly-Music.mp3 in Resources */,
+				EAAAC2481F88C117000DF4F4 /* Assets.xcassets in Resources */,
+				EA9059241FE3CD02005A392F /* Game-Music.mp3 in Resources */,
+				EAAAC2461F88C117000DF4F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAAAC2371F88C117000DF4F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC4FECB1F8D31720043C878 /* PlaySound.swift in Sources */,
+				EAB9899A1F913F8200C6080C /* PageViewController.swift in Sources */,
+				EAB9899C1F92259E00C6080C /* SpeechRecognizer.swift in Sources */,
+				EAAAC2611F8AA36B000DF4F4 /* Level1ViewController.swift in Sources */,
+				EA7F70FC1F91150D0013762F /* Emitter.swift in Sources */,
+				EAAAC2631F8B4E25000DF4F4 /* WelcomeViewController.swift in Sources */,
+				EAAAC2431F88C117000DF4F4 /* ViewController.swift in Sources */,
+				EA30B5E31F94B2B90070BC25 /* DesignableImage.swift in Sources */,
+				EA08F8ED1F8F35D5005D9C29 /* Level1GameModeViewController.swift in Sources */,
+				EA08F8EB1F8F2FFA005D9C29 /* DesignableView.swift in Sources */,
+				EA30B60A1F94C6070070BC25 /* Scene.swift in Sources */,
+				EA3D52FA1F929F7B00BFB42D /* SpeechRecogViewController.swift in Sources */,
+				EA30B6071F94C5440070BC25 /* SpriteViewController.swift in Sources */,
+				EA30B5D41F93A1320070BC25 /* Snow.swift in Sources */,
+				EA30B5DF1F94AF270070BC25 /* IdeasViewController.swift in Sources */,
+				EA8B11BE1FD1B730003060EB /* SpellTestGameViewController.swift in Sources */,
+				EA08F8E91F8E7382005D9C29 /* DesignableLabel.swift in Sources */,
+				EAAAC23F1F88C117000DF4F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAAAC2441F88C117000DF4F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAAC2451F88C117000DF4F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAAAC2491F88C117000DF4F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAAC24A1F88C117000DF4F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAAAC24D1F88C118000DF4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAAAC24E1F88C118000DF4F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAAAC2501F88C118000DF4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHF752NSR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
+				INFOPLIST_FILE = ARWizardHunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivhariApps.ARWizardHunt;
+				PRODUCT_NAME = WizHead;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAAAC2511F88C118000DF4F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHF752NSR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
+				INFOPLIST_FILE = ARWizardHunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivhariApps.ARWizardHunt;
+				PRODUCT_NAME = WizHead;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAAAC2361F88C117000DF4F4 /* Build configuration list for PBXProject "ARWizardHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAAC24D1F88C118000DF4F4 /* Debug */,
+				EAAAC24E1F88C118000DF4F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAAC24F1F88C118000DF4F4 /* Build configuration list for PBXNativeTarget "ARWizardHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAAC2501F88C118000DF4F4 /* Debug */,
+				EAAAC2511F88C118000DF4F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAAAC2331F88C117000DF4F4 /* Project object */;
+}

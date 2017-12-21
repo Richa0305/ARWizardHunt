@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8H2-Sp-eCy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HARRYP__.TTF">
+            <string>HarryP</string>
+        </array>
+        <array key="MagicSchoolTwo.ttf">
+            <string>MagicSchoolTwo</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="5om-qj-g44">
+            <objects>
+                <viewController id="bTY-PN-bAz" customClass="WelcomeViewController" customModule="WizHead" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qGR-oP-43W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parchment2" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="VNa-gf-Ixa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WizHead" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-rV-1W9" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="10" width="375" height="247"/>
+                                <fontDescription key="fontDescription" name="MagicSchoolTwo" family="Magic School Two" pointSize="106"/>
+                                <color key="textColor" red="0.82402046319796951" green="0.71221945454608593" blue="0.29948975207999473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MagicSchoolTwo" family="Magic School Two" pointSize="150"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bomb" translatesAutoresizingMaskIntoConstraints="NO" id="iea-TL-pdI">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="wand3" translatesAutoresizingMaskIntoConstraints="NO" id="8wT-l6-7XC">
+                                <rect key="frame" x="16" y="366.5" width="141.5" height="102"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpa-8i-j2g">
+                                <rect key="frame" x="112.5" y="418.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="95e-il-qol"/>
+                                    <constraint firstAttribute="width" constant="150" id="V7v-NM-ifs"/>
+                                </constraints>
+                                <state key="normal" image="hat3"/>
+                                <connections>
+                                    <action selector="hatButtonAction:" destination="bTY-PN-bAz" eventType="touchUpInside" id="8CD-5B-hae"/>
+                                    <segue destination="pAB-vO-JwY" kind="show" id="bti-Mr-n0c"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wand4" translatesAutoresizingMaskIntoConstraints="NO" id="Oj6-py-YFY">
+                                <rect key="frame" x="206.5" y="366.5" width="141.5" height="102"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8wT-l6-7XC" firstAttribute="bottom" secondItem="Oj6-py-YFY" secondAttribute="bottom" id="5b3-dm-EEi"/>
+                            <constraint firstItem="Oj6-py-YFY" firstAttribute="height" secondItem="8wT-l6-7XC" secondAttribute="height" id="5kv-q9-y6i"/>
+                            <constraint firstItem="8wT-l6-7XC" firstAttribute="leading" secondItem="qGR-oP-43W" secondAttribute="leadingMargin" id="882-d0-dcM">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="8wT-l6-7XC" firstAttribute="trailing" secondItem="iea-TL-pdI" secondAttribute="centerX" constant="-30" id="9TP-es-qtP"/>
+                            <constraint firstItem="iea-TL-pdI" firstAttribute="centerX" secondItem="VNa-gf-Ixa" secondAttribute="centerX" id="9Ts-VJ-Nbw"/>
+                            <constraint firstItem="H6W-rV-1W9" firstAttribute="trailing" secondItem="fwg-Lb-kfZ" secondAttribute="trailing" id="D3V-Th-zc1"/>
+                            <constraint firstItem="Oj6-py-YFY" firstAttribute="baseline" secondItem="8wT-l6-7XC" secondAttribute="baseline" id="Hnb-ug-heQ"/>
+                            <constraint firstItem="tpa-8i-j2g" firstAttribute="centerX" secondItem="VNa-gf-Ixa" secondAttribute="centerX" id="Hry-Zo-jVV"/>
+                            <constraint firstItem="VNa-gf-Ixa" firstAttribute="leading" secondItem="qGR-oP-43W" secondAttribute="leading" id="JTo-sm-H2j"/>
+                            <constraint firstItem="H6W-rV-1W9" firstAttribute="centerY" secondItem="VNa-gf-Ixa" secondAttribute="centerY" constant="-200" id="LdN-WS-ezK"/>
+                            <constraint firstItem="Oj6-py-YFY" firstAttribute="centerY" secondItem="8wT-l6-7XC" secondAttribute="centerY" id="T0E-O6-wVm"/>
+                            <constraint firstItem="VNa-gf-Ixa" firstAttribute="bottom" secondItem="fwg-Lb-kfZ" secondAttribute="bottom" id="XYU-gn-v3F"/>
+                            <constraint firstItem="H6W-rV-1W9" firstAttribute="centerX" secondItem="VNa-gf-Ixa" secondAttribute="centerX" id="fYu-F7-rYz"/>
+                            <constraint firstItem="Oj6-py-YFY" firstAttribute="leading" secondItem="8wT-l6-7XC" secondAttribute="trailing" constant="49" id="lJD-fA-2x7"/>
+                            <constraint firstItem="8wT-l6-7XC" firstAttribute="top" secondItem="iea-TL-pdI" secondAttribute="bottom" constant="-42" id="lhI-MP-Txx"/>
+                            <constraint firstItem="iea-TL-pdI" firstAttribute="centerY" secondItem="VNa-gf-Ixa" secondAttribute="centerY" id="mZT-p4-3kj"/>
+                            <constraint firstItem="tpa-8i-j2g" firstAttribute="top" secondItem="Oj6-py-YFY" secondAttribute="bottom" constant="-50" id="pw1-jR-5pV"/>
+                            <constraint firstItem="Oj6-py-YFY" firstAttribute="width" secondItem="8wT-l6-7XC" secondAttribute="width" id="rm7-2d-VHe"/>
+                            <constraint firstAttribute="trailing" secondItem="VNa-gf-Ixa" secondAttribute="trailing" id="teN-jJ-LkY"/>
+                            <constraint firstItem="8wT-l6-7XC" firstAttribute="top" secondItem="Oj6-py-YFY" secondAttribute="top" id="v6G-VO-s5Q"/>
+                            <constraint firstItem="VNa-gf-Ixa" firstAttribute="top" secondItem="qGR-oP-43W" secondAttribute="top" id="v9K-U0-KWz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fwg-Lb-kfZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="hatButton" destination="tpa-8i-j2g" id="Wpa-MB-6ew"/>
+                        <outlet property="wizHeadLabel" destination="H6W-rV-1W9" id="JMy-3v-BJZ"/>
+                        <outlet property="wizWandImage" destination="Oj6-py-YFY" id="rFC-SP-HO0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ov2-v0-4LX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455.27343749999994" y="68.521229868228403"/>
+        </scene>
+        <!--Level1 Game Mode View Controller-->
+        <scene sceneID="0CQ-md-T8k">
+            <objects>
+                <viewController id="n8D-ai-4ng" customClass="Level1GameModeViewController" customModule="WizHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PVK-14-HBD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parchment2" translatesAutoresizingMaskIntoConstraints="NO" id="OeN-8u-7vK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RJ7-PZ-ELe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wjo-No-NXB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Q0-rt-jup">
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="bel-B4-xoF"/>
+                                                </constraints>
+                                                <state key="normal" image="back"/>
+                                                <connections>
+                                                    <action selector="backAction:" destination="n8D-ai-4ng" eventType="touchUpInside" id="17i-0G-HCf"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Game Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCk-KQ-ssK" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                                <rect key="frame" x="46.5" y="0.0" width="288.5" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="v2l-4I-qGx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="54"/>
+                                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                        <size key="value" width="0.0" height="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xd-vP-gzC">
+                                                <rect key="frame" x="343" y="0.0" width="32" height="46"/>
+                                                <state key="normal" image="settings"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwo-ou-eCx" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VPg-GI-dXj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="pCt-l3-vzf">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="211"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSj-nC-kWX">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="211"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="V6I-tq-6pe"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htl-Dd-G16" customClass="DesignableView" customModule="WizHead" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="276" height="211"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtw-lQ-uoO" customClass="DesignableButton" customModule="WizHead" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="20" width="236" height="171"/>
+                                                        <state key="normal" image="diamond2"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="BV1-FR-VrT" kind="show" identifier="normalMode" id="GKO-c4-tzd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Gtw-lQ-uoO" firstAttribute="top" secondItem="htl-Dd-G16" secondAttribute="top" constant="20" id="8en-9g-lrY"/>
+                                                    <constraint firstItem="Gtw-lQ-uoO" firstAttribute="leading" secondItem="htl-Dd-G16" secondAttribute="leading" constant="20" id="IGa-fR-gW3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Gtw-lQ-uoO" secondAttribute="trailing" constant="20" id="Ufw-ri-D4p"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Gtw-lQ-uoO" secondAttribute="bottom" constant="20" id="qln-Ne-Vfz"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                                                        <real key="value" value="27"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.54580479452054798" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTg-7T-M9B">
+                                                <rect key="frame" x="326" y="0.0" width="49" height="211"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="DTg-7T-M9B" firstAttribute="leading" secondItem="htl-Dd-G16" secondAttribute="trailing" id="Akl-gn-WeU"/>
+                                            <constraint firstAttribute="bottom" secondItem="htl-Dd-G16" secondAttribute="bottom" id="Ljb-rf-MeO"/>
+                                            <constraint firstItem="htl-Dd-G16" firstAttribute="top" secondItem="pCt-l3-vzf" secondAttribute="top" id="mN8-jz-HOM"/>
+                                            <constraint firstItem="htl-Dd-G16" firstAttribute="centerX" secondItem="pCt-l3-vzf" secondAttribute="centerX" id="umH-rK-pnV"/>
+                                            <constraint firstItem="htl-Dd-G16" firstAttribute="leading" secondItem="JSj-nC-kWX" secondAttribute="trailing" id="zgQ-Zj-iT8"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winter Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52r-dW-hfS" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="343" width="375" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="Anc-Cx-X3t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Uos-Kj-uAm">
+                                        <rect key="frame" x="0.0" y="406" width="375" height="211"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uT-H5-bkC">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="211"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="J8H-Ps-Rw7"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gP5-Pg-knA" customClass="DesignableView" customModule="WizHead" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="276" height="211"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moc-mE-k2J" customClass="DesignableButton" customModule="WizHead" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="20" width="236" height="171"/>
+                                                        <state key="normal" image="diamond2"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="0.55281464041095896" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="BV1-FR-VrT" kind="show" identifier="winterMode" id="WWE-4T-8SJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="moc-mE-k2J" secondAttribute="trailing" constant="20" id="dgu-Rt-k88"/>
+                                                    <constraint firstItem="moc-mE-k2J" firstAttribute="top" secondItem="gP5-Pg-knA" secondAttribute="top" constant="20" id="eLb-r4-OAI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="moc-mE-k2J" secondAttribute="bottom" constant="20" id="nxc-dM-E0s"/>
+                                                    <constraint firstItem="moc-mE-k2J" firstAttribute="leading" secondItem="gP5-Pg-knA" secondAttribute="leading" constant="20" id="rl5-QR-Voz"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                                                        <real key="value" value="27"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.51083583047945202" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJ6-Dd-SAB">
+                                                <rect key="frame" x="326" y="0.0" width="49" height="211"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GJ6-Dd-SAB" firstAttribute="leading" secondItem="gP5-Pg-knA" secondAttribute="trailing" id="0pR-hJ-qmQ"/>
+                                            <constraint firstItem="gP5-Pg-knA" firstAttribute="leading" secondItem="4uT-H5-bkC" secondAttribute="trailing" id="EaP-DT-sgM"/>
+                                            <constraint firstItem="gP5-Pg-knA" firstAttribute="centerX" secondItem="Uos-Kj-uAm" secondAttribute="centerX" id="KpW-vF-hpR"/>
+                                            <constraint firstItem="gP5-Pg-knA" firstAttribute="top" secondItem="Uos-Kj-uAm" secondAttribute="top" id="MkN-cD-F7p"/>
+                                            <constraint firstAttribute="bottom" secondItem="gP5-Pg-knA" secondAttribute="bottom" id="blC-N0-av2"/>
+                                            <constraint firstItem="4uT-H5-bkC" firstAttribute="leading" secondItem="Uos-Kj-uAm" secondAttribute="leading" id="leG-4c-BGu"/>
+                                            <constraint firstAttribute="trailing" secondItem="GJ6-Dd-SAB" secondAttribute="trailing" id="xjn-0T-BsI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uos-Kj-uAm" firstAttribute="width" secondItem="pCt-l3-vzf" secondAttribute="width" id="dm5-uZ-uDa"/>
+                                    <constraint firstItem="Uos-Kj-uAm" firstAttribute="height" secondItem="pCt-l3-vzf" secondAttribute="height" id="mLd-Mu-XZ2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RJ7-PZ-ELe" firstAttribute="top" secondItem="6YX-8g-IGd" secondAttribute="top" id="9oi-0F-Nc8"/>
+                            <constraint firstAttribute="trailing" secondItem="RJ7-PZ-ELe" secondAttribute="trailing" id="Kmk-vz-AwC"/>
+                            <constraint firstItem="OeN-8u-7vK" firstAttribute="leading" secondItem="6YX-8g-IGd" secondAttribute="leading" id="SZq-Re-CgI"/>
+                            <constraint firstItem="6YX-8g-IGd" firstAttribute="bottom" secondItem="RJ7-PZ-ELe" secondAttribute="bottom" constant="30" id="VyE-ZU-hso"/>
+                            <constraint firstItem="RJ7-PZ-ELe" firstAttribute="leading" secondItem="6YX-8g-IGd" secondAttribute="leading" id="YCU-2U-utd"/>
+                            <constraint firstItem="OeN-8u-7vK" firstAttribute="trailing" secondItem="6YX-8g-IGd" secondAttribute="trailing" id="izE-dm-guj"/>
+                            <constraint firstItem="OeN-8u-7vK" firstAttribute="top" secondItem="PVK-14-HBD" secondAttribute="top" id="k6X-BZ-VLv"/>
+                            <constraint firstItem="OeN-8u-7vK" firstAttribute="bottom" secondItem="6YX-8g-IGd" secondAttribute="bottom" id="mTk-hf-Uw2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6YX-8g-IGd"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameModeLabel" destination="lCk-KQ-ssK" id="aKW-jF-vrP"/>
+                        <outlet property="normalModeLabel" destination="Rwo-ou-eCx" id="1Dz-DS-yl4"/>
+                        <outlet property="winterModeLabel" destination="52r-dW-hfS" id="NhN-NT-wu2"/>
+                        <outlet property="winterModeView" destination="gP5-Pg-knA" id="za2-Tu-cTl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ce8-Fd-JgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="40.929535232383813"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="WizHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.89096941410395714" blue="0.89938927664974622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </arscnView>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <segue destination="7dU-fI-yhm" kind="presentation" identifier="showIdeaBlock" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="0n3-97-OBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2402" y="9"/>
+        </scene>
+        <!--Ideas View Controller-->
+        <scene sceneID="eU8-qb-DEG">
+            <objects>
+                <viewController id="7dU-fI-yhm" customClass="IdeasViewController" customModule="WizHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s5y-e8-Uiu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FwV-7q-4i1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="627"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idea-parchment2" translatesAutoresizingMaskIntoConstraints="NO" id="0nv-hu-quc">
+                                        <rect key="frame" x="20" y="80" width="335" height="467"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Gems are hidden around you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKv-MU-nXN" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="239" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Them!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsI-wF-hQb" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="302" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake your phone to find the gems" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXW-qM-mOT" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="365" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think Like a Wizard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8P-DO-Mdz" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="194" width="320" height="27"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="23"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which possess dark magic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gE0-cS-vwF" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="270.5" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And Destroy Them" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBj-LO-T8D" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="333.5" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch the gem to destroy it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg1-qK-Jwg" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="396.5" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                        </variation>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjw-fZ-gSk">
+                                        <rect key="frame" x="35" y="380" width="320" height="47"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                        <state key="normal" title="Main Manu">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mainMenuButtonAction:" destination="7dU-fI-yhm" eventType="touchUpInside" id="Md7-Lo-Po3"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPK-GU-LcE">
+                                        <rect key="frame" x="35" y="435" width="320" height="47"/>
+                                        <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                        <state key="normal" title="Play Again">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playAgainButtonAction:" destination="7dU-fI-yhm" eventType="touchUpInside" id="5om-Vn-px0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Tjw-fZ-gSk" firstAttribute="leading" secondItem="C8P-DO-Mdz" secondAttribute="leading" id="09V-QW-yq7"/>
+                                    <constraint firstItem="gE0-cS-vwF" firstAttribute="top" secondItem="MKv-MU-nXN" secondAttribute="bottom" constant="8" id="0f1-BE-phX"/>
+                                    <constraint firstItem="MKv-MU-nXN" firstAttribute="trailing" secondItem="gE0-cS-vwF" secondAttribute="trailing" id="3W2-19-qZ1"/>
+                                    <constraint firstAttribute="trailing" secondItem="0nv-hu-quc" secondAttribute="trailing" constant="20" id="3Y6-he-peC"/>
+                                    <constraint firstItem="gsI-wF-hQb" firstAttribute="top" secondItem="gE0-cS-vwF" secondAttribute="bottom" constant="8" id="4Jf-8m-VUI"/>
+                                    <constraint firstItem="C8P-DO-Mdz" firstAttribute="leading" secondItem="MKv-MU-nXN" secondAttribute="leading" id="86p-oH-A6z">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="VBj-LO-T8D" firstAttribute="top" secondItem="gsI-wF-hQb" secondAttribute="bottom" constant="8" id="8tF-GO-WwN"/>
+                                    <constraint firstItem="Lg1-qK-Jwg" firstAttribute="trailing" secondItem="oXW-qM-mOT" secondAttribute="trailing" id="9Yq-tK-fZT"/>
+                                    <constraint firstItem="uPK-GU-LcE" firstAttribute="trailing" secondItem="Tjw-fZ-gSk" secondAttribute="trailing" id="9sK-hN-4Hn"/>
+                                    <constraint firstItem="C8P-DO-Mdz" firstAttribute="trailing" secondItem="MKv-MU-nXN" secondAttribute="trailing" id="ASa-oX-4rK"/>
+                                    <constraint firstItem="Lg1-qK-Jwg" firstAttribute="leading" secondItem="C8P-DO-Mdz" secondAttribute="leading" id="HNc-sp-ziz"/>
+                                    <constraint firstItem="uPK-GU-LcE" firstAttribute="leading" secondItem="Tjw-fZ-gSk" secondAttribute="leading" id="Idg-0m-2Js"/>
+                                    <constraint firstItem="gsI-wF-hQb" firstAttribute="trailing" secondItem="0nv-hu-quc" secondAttribute="trailing" id="KOJ-jo-d6f"/>
+                                    <constraint firstItem="uPK-GU-LcE" firstAttribute="top" secondItem="Tjw-fZ-gSk" secondAttribute="bottom" constant="7.5" id="Kaj-pa-ylv"/>
+                                    <constraint firstItem="0nv-hu-quc" firstAttribute="centerY" secondItem="FwV-7q-4i1" secondAttribute="centerY" id="Qif-zr-xOP"/>
+                                    <constraint firstItem="gE0-cS-vwF" firstAttribute="trailing" secondItem="gsI-wF-hQb" secondAttribute="trailing" id="RoP-uw-5Uk"/>
+                                    <constraint firstItem="C8P-DO-Mdz" firstAttribute="leading" secondItem="gsI-wF-hQb" secondAttribute="leading" id="SBB-91-wPm"/>
+                                    <constraint firstItem="C8P-DO-Mdz" firstAttribute="leading" secondItem="gE0-cS-vwF" secondAttribute="leading" id="W39-UP-e4F"/>
+                                    <constraint firstItem="Lg1-qK-Jwg" firstAttribute="top" secondItem="oXW-qM-mOT" secondAttribute="bottom" constant="8" id="WD5-ul-Bro"/>
+                                    <constraint firstAttribute="bottom" secondItem="0nv-hu-quc" secondAttribute="bottom" constant="80" id="f3g-6x-4hy"/>
+                                    <constraint firstItem="oXW-qM-mOT" firstAttribute="top" secondItem="VBj-LO-T8D" secondAttribute="bottom" constant="8" id="fUM-2X-gJj"/>
+                                    <constraint firstItem="MKv-MU-nXN" firstAttribute="top" secondItem="C8P-DO-Mdz" secondAttribute="bottom" constant="18.5" id="fUt-pH-tGj"/>
+                                    <constraint firstItem="C8P-DO-Mdz" firstAttribute="leading" secondItem="oXW-qM-mOT" secondAttribute="leading" id="gQf-ye-VEF"/>
+                                    <constraint firstItem="gsI-wF-hQb" firstAttribute="centerY" secondItem="0nv-hu-quc" secondAttribute="centerY" id="kIB-gL-IFf"/>
+                                    <constraint firstItem="Tjw-fZ-gSk" firstAttribute="top" secondItem="Lg1-qK-Jwg" secondAttribute="bottom" constant="-40" id="keD-wd-n8r"/>
+                                    <constraint firstItem="0nv-hu-quc" firstAttribute="centerX" secondItem="FwV-7q-4i1" secondAttribute="centerX" id="lN4-eu-W1q"/>
+                                    <constraint firstItem="C8P-DO-Mdz" firstAttribute="leading" secondItem="0nv-hu-quc" secondAttribute="leading" constant="50" id="sQ9-RP-GoD">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstItem="C8P-DO-Mdz" firstAttribute="leading" secondItem="VBj-LO-T8D" secondAttribute="leading" id="tuR-Nm-ymv"/>
+                                    <constraint firstItem="VBj-LO-T8D" firstAttribute="trailing" secondItem="gsI-wF-hQb" secondAttribute="trailing" id="wRF-bb-wZm"/>
+                                    <constraint firstItem="0nv-hu-quc" firstAttribute="top" secondItem="FwV-7q-4i1" secondAttribute="top" constant="80" id="wj8-aL-zmc"/>
+                                    <constraint firstItem="oXW-qM-mOT" firstAttribute="trailing" secondItem="VBj-LO-T8D" secondAttribute="trailing" id="xAs-rN-LRr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tjw-fZ-gSk" secondAttribute="trailing" constant="20" id="ynW-CC-oTe"/>
+                                    <constraint firstItem="0nv-hu-quc" firstAttribute="leading" secondItem="FwV-7q-4i1" secondAttribute="leading" constant="20" id="zdi-gP-K33"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FwV-7q-4i1" firstAttribute="top" secondItem="UKW-k0-r2T" secondAttribute="top" id="KAf-pA-jdv"/>
+                            <constraint firstItem="FwV-7q-4i1" firstAttribute="leading" secondItem="UKW-k0-r2T" secondAttribute="leading" id="LzT-cB-nCq"/>
+                            <constraint firstItem="FwV-7q-4i1" firstAttribute="trailing" secondItem="UKW-k0-r2T" secondAttribute="trailing" id="TVS-WJ-FIV"/>
+                            <constraint firstItem="UKW-k0-r2T" firstAttribute="bottom" secondItem="FwV-7q-4i1" secondAttribute="bottom" constant="20" id="v8X-Ot-Sic"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UKW-k0-r2T"/>
+                    </view>
+                    <connections>
+                        <outlet property="line1" destination="MKv-MU-nXN" id="eGW-iw-WQa"/>
+                        <outlet property="line2" destination="gE0-cS-vwF" id="WtK-Mx-tsU"/>
+                        <outlet property="line3" destination="gsI-wF-hQb" id="RPd-9E-PWl"/>
+                        <outlet property="line4" destination="VBj-LO-T8D" id="rxn-6Y-Ch5"/>
+                        <outlet property="line5" destination="oXW-qM-mOT" id="ZOQ-s3-4LG"/>
+                        <outlet property="line6" destination="Lg1-qK-Jwg" id="hva-MO-Lrn"/>
+                        <outlet property="mainLabel" destination="C8P-DO-Mdz" id="7pb-GQ-z2U"/>
+                        <outlet property="mainMenuButton" destination="Tjw-fZ-gSk" id="dad-dt-cZ5"/>
+                        <outlet property="playAgainButton" destination="uPK-GU-LcE" id="U0e-qD-lVw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXK-ep-AZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3136.8000000000002" y="-367.46626686656674"/>
+        </scene>
+        <!--Sprite View Controller-->
+        <scene sceneID="hsa-W4-iqg">
+            <objects>
+                <viewController id="8se-mK-I98" customClass="SpriteViewController" customModule="WizHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LJV-Ne-dyo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arskView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLn-s1-3vN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arskView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="rMN-BE-E0m"/>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="hLn-s1-3vN" id="zPG-Kh-UKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMt-tJ-56K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4657" y="-1851"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="tqz-eb-Yd8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="4" navigationOrientation="horizontal" spineLocation="none" id="pAB-vO-JwY" customClass="PageViewController" customModule="WizHead" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cd-MP-CC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-636"/>
+        </scene>
+        <!--Speech Recog View Controller-->
+        <scene sceneID="uS0-SH-Q9Z">
+            <objects>
+                <viewController id="4qM-00-H0o" customClass="SpeechRecogViewController" customModule="WizHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZH7-E4-8GB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="527-kd-vhv">
+                                <rect key="frame" x="70" y="86" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonAction" destination="4qM-00-H0o" eventType="touchUpInside" id="vPn-tq-4eg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="kUM-mF-9fr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaM-w3-RGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2418" y="-823"/>
+        </scene>
+        <!--Level1 View Controller-->
+        <scene sceneID="Qhu-o7-4lH">
+            <objects>
+                <viewController restorationIdentifier="SecondVC" storyboardIdentifier="SecondVC" id="52G-Ln-33M" customClass="Level1ViewController" customModule="WizHead" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XSt-9N-i2l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parchment2" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="XLZ-90-WC7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alohomora" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn0-cb-Loi" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="600" width="258.5" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="R0B-QN-nHf">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="53"/>
+                                <color key="textColor" red="1" green="0.65098039215686276" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="100"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="SS2-Dn-w5f">
+                                <rect key="frame" x="0.0" y="109" width="375" height="449"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Gems " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANJ-MU-VRi" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="255.5" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.68235294117647061" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lar-G9-C7w" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="313.5" width="343" height="41.5"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.68235294117647061" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Philosopher's" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrI-WQ-C5e" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="376" width="343" height="41.5"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.68235294117647061" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Your Phone &amp; Say " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyj-xP-vqe" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="562" width="343" height="35"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.65098039215686276" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cw5-kQ-uRi" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="437.5" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.68235294117647061" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock the Door by Casting The Charm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykk-Eo-Aby" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="AZX-5h-tq3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.65098039215686276" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="mjd-FK-tmN">
+                                <rect key="frame" x="347" y="620" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="evL-t1-6hU">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="7xb-B9-cBz">
+                                <rect key="frame" x="-1.5" y="620" width="30" height="27"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="bg9-Id-Xu6">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="height" secondItem="ANJ-MU-VRi" secondAttribute="height" id="3Ls-dy-KZr"/>
+                            <constraint firstItem="SS2-Dn-w5f" firstAttribute="leading" secondItem="CTH-fm-wLd" secondAttribute="leading" id="3j0-A9-4DD">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="Cw5-kQ-uRi" firstAttribute="trailing" secondItem="FrI-WQ-C5e" secondAttribute="trailing" id="52f-5u-c24"/>
+                            <constraint firstItem="FrI-WQ-C5e" firstAttribute="height" secondItem="lar-G9-C7w" secondAttribute="height" id="5kq-ph-moI"/>
+                            <constraint firstItem="FrI-WQ-C5e" firstAttribute="top" secondItem="lar-G9-C7w" secondAttribute="bottom" constant="21" id="Dhn-0h-JRV"/>
+                            <constraint firstItem="dn0-cb-Loi" firstAttribute="leading" secondItem="7xb-B9-cBz" secondAttribute="trailing" constant="30" id="Dpr-JA-HtY">
+                                <variation key="heightClass=regular-widthClass=regular" constant="102"/>
+                            </constraint>
+                            <constraint firstItem="CTH-fm-wLd" firstAttribute="trailing" secondItem="ANJ-MU-VRi" secondAttribute="trailing" constant="16" id="EgB-Z9-DJ8"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="trailing" secondItem="FrI-WQ-C5e" secondAttribute="trailing" id="EsV-ZT-Dqw"/>
+                            <constraint firstItem="Cw5-kQ-uRi" firstAttribute="top" secondItem="FrI-WQ-C5e" secondAttribute="bottom" constant="20" id="Ewu-AN-IZI"/>
+                            <constraint firstItem="FrI-WQ-C5e" firstAttribute="width" secondItem="lar-G9-C7w" secondAttribute="width" id="JRt-jh-N6T"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="width" secondItem="ANJ-MU-VRi" secondAttribute="width" id="Juz-DA-iQd"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="top" secondItem="ANJ-MU-VRi" secondAttribute="bottom" constant="17" id="KC8-ht-j7d"/>
+                            <constraint firstItem="dn0-cb-Loi" firstAttribute="centerY" secondItem="7xb-B9-cBz" secondAttribute="centerY" id="NaN-3A-wZk"/>
+                            <constraint firstItem="mjd-FK-tmN" firstAttribute="centerY" secondItem="dn0-cb-Loi" secondAttribute="centerY" id="O0r-4w-AGf"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="leading" secondItem="FrI-WQ-C5e" secondAttribute="leading" id="O2F-oj-a4F"/>
+                            <constraint firstItem="dn0-cb-Loi" firstAttribute="bottom" secondItem="XLZ-90-WC7" secondAttribute="bottom" constant="-36" id="QHv-Z1-2Ra">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="XLZ-90-WC7" firstAttribute="bottom" secondItem="CTH-fm-wLd" secondAttribute="bottom" id="RGS-KM-aPr"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="trailing" secondItem="gyj-xP-vqe" secondAttribute="trailing" id="RuZ-Vw-DVz"/>
+                            <constraint firstItem="dn0-cb-Loi" firstAttribute="centerX" secondItem="XLZ-90-WC7" secondAttribute="centerX" id="SvN-m4-GDg"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="leading" secondItem="ANJ-MU-VRi" secondAttribute="leading" id="XH1-O1-bNr"/>
+                            <constraint firstItem="SS2-Dn-w5f" firstAttribute="centerX" secondItem="XLZ-90-WC7" secondAttribute="centerX" id="Y26-ak-yCP"/>
+                            <constraint firstItem="ANJ-MU-VRi" firstAttribute="leading" secondItem="CTH-fm-wLd" secondAttribute="leading" constant="16" id="YIy-lW-FXW"/>
+                            <constraint firstItem="SS2-Dn-w5f" firstAttribute="top" secondItem="XSt-9N-i2l" secondAttribute="top" constant="109" id="ZM5-Bl-5ce"/>
+                            <constraint firstItem="XLZ-90-WC7" firstAttribute="leading" secondItem="CTH-fm-wLd" secondAttribute="leading" id="aPa-uY-Fax"/>
+                            <constraint firstItem="dn0-cb-Loi" firstAttribute="top" secondItem="mjd-FK-tmN" secondAttribute="top" constant="-20" id="bqy-4Q-utn"/>
+                            <constraint firstItem="SS2-Dn-w5f" firstAttribute="trailing" secondItem="CTH-fm-wLd" secondAttribute="trailing" id="dcI-gK-kV7">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-30"/>
+                            </constraint>
+                            <constraint firstItem="XLZ-90-WC7" firstAttribute="top" secondItem="XSt-9N-i2l" secondAttribute="top" id="efd-g2-PIi"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="trailing" secondItem="ANJ-MU-VRi" secondAttribute="trailing" id="hEp-rQ-ze6"/>
+                            <constraint firstItem="ykk-Eo-Aby" firstAttribute="trailing" secondItem="ANJ-MU-VRi" secondAttribute="trailing" id="hSC-25-S55"/>
+                            <constraint firstItem="ykk-Eo-Aby" firstAttribute="leading" secondItem="ANJ-MU-VRi" secondAttribute="leading" id="iTv-qj-zEd"/>
+                            <constraint firstItem="dn0-cb-Loi" firstAttribute="top" secondItem="7xb-B9-cBz" secondAttribute="top" constant="-20" id="jbQ-BY-vnQ"/>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="leading" secondItem="gyj-xP-vqe" secondAttribute="leading" id="m9i-Va-0WZ"/>
+                            <constraint firstItem="XLZ-90-WC7" firstAttribute="trailing" secondItem="CTH-fm-wLd" secondAttribute="trailing" id="o51-EK-vwP"/>
+                            <constraint firstItem="dn0-cb-Loi" firstAttribute="top" secondItem="gyj-xP-vqe" secondAttribute="bottom" constant="3" id="sPy-0v-Oum"/>
+                            <constraint firstItem="Cw5-kQ-uRi" firstAttribute="leading" secondItem="FrI-WQ-C5e" secondAttribute="leading" id="sik-H9-iyc"/>
+                            <constraint firstItem="mjd-FK-tmN" firstAttribute="leading" secondItem="dn0-cb-Loi" secondAttribute="trailing" constant="30" id="tnF-2O-MiP">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="SS2-Dn-w5f" firstAttribute="centerY" secondItem="XLZ-90-WC7" secondAttribute="centerY" id="x7r-Z1-35B">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-32"/>
+                            </constraint>
+                            <constraint firstItem="lar-G9-C7w" firstAttribute="centerY" secondItem="XLZ-90-WC7" secondAttribute="centerY" id="yHH-HV-ian"/>
+                            <constraint firstItem="SS2-Dn-w5f" firstAttribute="top" secondItem="ykk-Eo-Aby" secondAttribute="bottom" constant="10" id="zmz-kZ-6SU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CTH-fm-wLd"/>
+                    </view>
+                    <connections>
+                        <outlet property="alohomora" destination="dn0-cb-Loi" id="kcp-LI-qZg"/>
+                        <outlet property="andLabel" destination="lar-G9-C7w" id="LzK-zz-gWE"/>
+                        <outlet property="gemLabel" destination="ANJ-MU-VRi" id="SAp-Q9-0MH"/>
+                        <outlet property="philosopherLabel" destination="FrI-WQ-C5e" id="5UB-kB-7tL"/>
+                        <outlet property="sayLabel" destination="gyj-xP-vqe" id="RqN-TG-IVN"/>
+                        <outlet property="stoneLabel" destination="Cw5-kQ-uRi" id="Ot3-Lp-hqW"/>
+                        <outlet property="unlockLabel" destination="ykk-Eo-Aby" id="QK6-Ad-kbJ"/>
+                        <segue destination="n8D-ai-4ng" kind="show" identifier="level2Segue" id="qGv-H5-Xdn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTx-tz-xHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="41"/>
+        </scene>
+        <!--Level1 View Controller-->
+        <scene sceneID="BIu-ce-A3t">
+            <objects>
+                <viewController restorationIdentifier="ThirdVC" storyboardIdentifier="ThirdVC" id="bKP-no-eUr" customClass="Level1ViewController" customModule="WizHead" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PxQ-e9-yuN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parchment2" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-Qp-rmQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alohomora" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99D-aU-4GH" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="600" width="258.5" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="91e-K7-SUq">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="53"/>
+                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="100"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="tc5-k9-2wp">
+                                <rect key="frame" x="0.0" y="109" width="375" height="449"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Forbidden Forest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZZ-eE-cRS" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="256" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-7T-HSU" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="314" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Spiders" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-bD-KOz" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="376" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Your Phone &amp; Say " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldD-2r-TjO" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="562" width="343" height="35"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coming soon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G89-LJ-ySB" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="437" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock the Door by Casting The Charm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARu-ui-ZzF" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="39T-Eh-oit"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="rZc-lL-MVC">
+                                <rect key="frame" x="357" y="620" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="YlA-Ws-0Ix"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="Dh2-Yp-qi6">
+                                <rect key="frame" x="-1.5" y="620" width="30" height="27"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="JXJ-3r-4ht"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="trailing" secondItem="ldD-2r-TjO" secondAttribute="trailing" id="1ga-zB-RS5"/>
+                            <constraint firstItem="G89-LJ-ySB" firstAttribute="top" secondItem="7B1-bD-KOz" secondAttribute="bottom" constant="20" id="371-qa-HFC"/>
+                            <constraint firstItem="99D-aU-4GH" firstAttribute="centerY" secondItem="Dh2-Yp-qi6" secondAttribute="centerY" id="3uK-KN-f65"/>
+                            <constraint firstItem="tc5-k9-2wp" firstAttribute="trailing" secondItem="u8b-mZ-pZp" secondAttribute="trailing" id="5ei-oL-XIw">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-30"/>
+                            </constraint>
+                            <constraint firstItem="7B1-bD-KOz" firstAttribute="height" secondItem="yr0-7T-HSU" secondAttribute="height" id="8F4-Fz-ePF"/>
+                            <constraint firstItem="tc5-k9-2wp" firstAttribute="centerY" secondItem="JfQ-Qp-rmQ" secondAttribute="centerY" id="8kR-89-S0z">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-32"/>
+                            </constraint>
+                            <constraint firstItem="rZc-lL-MVC" firstAttribute="leading" secondItem="99D-aU-4GH" secondAttribute="trailing" constant="40" id="9LB-J2-Cyj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="JfQ-Qp-rmQ" firstAttribute="top" secondItem="PxQ-e9-yuN" secondAttribute="top" id="Axw-aj-U1T"/>
+                            <constraint firstItem="tc5-k9-2wp" firstAttribute="centerX" secondItem="JfQ-Qp-rmQ" secondAttribute="centerX" id="CwK-dw-tsk"/>
+                            <constraint firstItem="u8b-mZ-pZp" firstAttribute="trailing" secondItem="4ZZ-eE-cRS" secondAttribute="trailing" constant="16" id="FFh-yK-s3l"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="height" secondItem="4ZZ-eE-cRS" secondAttribute="height" id="GCT-eP-VnP"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="trailing" secondItem="7B1-bD-KOz" secondAttribute="trailing" id="Gnh-aY-H59"/>
+                            <constraint firstItem="4ZZ-eE-cRS" firstAttribute="leading" secondItem="u8b-mZ-pZp" secondAttribute="leading" constant="16" id="I5R-5p-u9J"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="top" secondItem="4ZZ-eE-cRS" secondAttribute="bottom" constant="17" id="Lg6-iQ-8St"/>
+                            <constraint firstItem="99D-aU-4GH" firstAttribute="top" secondItem="rZc-lL-MVC" secondAttribute="top" constant="-20" id="QBg-P7-eQV"/>
+                            <constraint firstItem="99D-aU-4GH" firstAttribute="top" secondItem="ldD-2r-TjO" secondAttribute="bottom" constant="3" id="SMA-u7-aab"/>
+                            <constraint firstItem="7B1-bD-KOz" firstAttribute="top" secondItem="yr0-7T-HSU" secondAttribute="bottom" constant="21" id="Tba-eC-xCQ"/>
+                            <constraint firstItem="G89-LJ-ySB" firstAttribute="leading" secondItem="7B1-bD-KOz" secondAttribute="leading" id="VhV-jv-5un"/>
+                            <constraint firstItem="99D-aU-4GH" firstAttribute="top" secondItem="Dh2-Yp-qi6" secondAttribute="top" constant="-20" id="XGg-QC-X4K"/>
+                            <constraint firstItem="ARu-ui-ZzF" firstAttribute="leading" secondItem="4ZZ-eE-cRS" secondAttribute="leading" id="Z6P-R3-t2I"/>
+                            <constraint firstItem="tc5-k9-2wp" firstAttribute="top" secondItem="PxQ-e9-yuN" secondAttribute="top" constant="109" id="b87-CH-nPa"/>
+                            <constraint firstItem="99D-aU-4GH" firstAttribute="centerX" secondItem="JfQ-Qp-rmQ" secondAttribute="centerX" id="cg6-XJ-Icf"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="width" secondItem="4ZZ-eE-cRS" secondAttribute="width" id="dJB-Ye-0PJ"/>
+                            <constraint firstItem="99D-aU-4GH" firstAttribute="leading" secondItem="Dh2-Yp-qi6" secondAttribute="trailing" constant="30" id="eST-zH-rvg">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="centerY" secondItem="JfQ-Qp-rmQ" secondAttribute="centerY" id="gAp-0C-kot"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="leading" secondItem="7B1-bD-KOz" secondAttribute="leading" id="hwB-uu-kvd"/>
+                            <constraint firstItem="tc5-k9-2wp" firstAttribute="leading" secondItem="u8b-mZ-pZp" secondAttribute="leading" id="iz7-80-64C">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="7B1-bD-KOz" firstAttribute="width" secondItem="yr0-7T-HSU" secondAttribute="width" id="j9s-LN-Xdc"/>
+                            <constraint firstItem="tc5-k9-2wp" firstAttribute="top" secondItem="ARu-ui-ZzF" secondAttribute="bottom" constant="10" id="nPF-Lf-sbJ"/>
+                            <constraint firstItem="G89-LJ-ySB" firstAttribute="trailing" secondItem="7B1-bD-KOz" secondAttribute="trailing" id="qTE-e8-UCj"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="leading" secondItem="ldD-2r-TjO" secondAttribute="leading" id="ql9-qz-gt6"/>
+                            <constraint firstItem="JfQ-Qp-rmQ" firstAttribute="leading" secondItem="u8b-mZ-pZp" secondAttribute="leading" id="sJK-Fv-1Ba"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="trailing" secondItem="4ZZ-eE-cRS" secondAttribute="trailing" id="shz-Br-hgr"/>
+                            <constraint firstItem="ARu-ui-ZzF" firstAttribute="trailing" secondItem="4ZZ-eE-cRS" secondAttribute="trailing" id="u7W-AE-lps"/>
+                            <constraint firstItem="JfQ-Qp-rmQ" firstAttribute="bottom" secondItem="u8b-mZ-pZp" secondAttribute="bottom" id="uTO-ax-m5W"/>
+                            <constraint firstItem="JfQ-Qp-rmQ" firstAttribute="trailing" secondItem="u8b-mZ-pZp" secondAttribute="trailing" id="xhA-gw-mzG"/>
+                            <constraint firstItem="yr0-7T-HSU" firstAttribute="leading" secondItem="4ZZ-eE-cRS" secondAttribute="leading" id="xvv-WA-SgL"/>
+                            <constraint firstItem="rZc-lL-MVC" firstAttribute="centerY" secondItem="99D-aU-4GH" secondAttribute="centerY" id="yJd-BK-nRh"/>
+                            <constraint firstItem="99D-aU-4GH" firstAttribute="bottom" secondItem="JfQ-Qp-rmQ" secondAttribute="bottom" constant="-36" id="ybu-5d-CDI">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u8b-mZ-pZp"/>
+                    </view>
+                    <connections>
+                        <outlet property="alohomora" destination="99D-aU-4GH" id="Gnx-ML-xhl"/>
+                        <outlet property="andLabel" destination="yr0-7T-HSU" id="dQx-Ae-Hco"/>
+                        <outlet property="gemLabel" destination="4ZZ-eE-cRS" id="J3P-C4-50i"/>
+                        <outlet property="philosopherLabel" destination="7B1-bD-KOz" id="0xw-XE-9ws"/>
+                        <outlet property="sayLabel" destination="ldD-2r-TjO" id="lsD-KA-cNm"/>
+                        <outlet property="stoneLabel" destination="G89-LJ-ySB" id="o1J-nj-vfk"/>
+                        <outlet property="unlockLabel" destination="ARu-ui-ZzF" id="WDt-xO-aKj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ys-yd-Fm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="743"/>
+        </scene>
+        <!--Spell Test Game View Controller-->
+        <scene sceneID="oXH-5K-7Os">
+            <objects>
+                <viewController id="8H2-Sp-eCy" customClass="SpellTestGameViewController" customModule="WizHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GtN-pn-YaR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parchment2" translatesAutoresizingMaskIntoConstraints="NO" id="vJU-11-xej">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYc-AR-Kt8">
+                                <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backAction:" destination="n8D-ai-4ng" eventType="touchUpInside" id="9G5-3B-RXN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrokenCauldron" translatesAutoresizingMaskIntoConstraints="NO" id="4JW-EX-n3O">
+                                <rect key="frame" x="38" y="306" width="300" height="281"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Phone is Your wand! Touch the Screen, Swiss Your Phone and Cast the Spell to fix the Broken Cauldron" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-Of-d6x" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="10" y="80" width="355" height="154"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="33"/>
+                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="80"/>
+                                </variation>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVO-wm-XJm">
+                                <rect key="frame" x="0.0" y="623" width="375" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tot-8v-xfy" customClass="DesignableView" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="165" y="0.0" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLh-UC-GB1">
+                                        <rect key="frame" x="169" y="8" width="36" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="Arrow-down.svg"/>
+                                        <connections>
+                                            <action selector="toggleMenuButtonAction:" destination="8H2-Sp-eCy" eventType="touchUpInside" id="QbW-Nz-W38"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="aPF-V2-Q1X">
+                                        <rect key="frame" x="0.0" y="62" width="375" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7t-s4-0VJ" customClass="DesignableButton" customModule="WizHead" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="276" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.55591823630136983" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="1xU-Qf-DCb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MagicSchoolTwo" family="Magic School Two" pointSize="20"/>
+                                                <state key="normal" title="Watch this ad to get right spell">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tk6-Q5-MFX" customClass="DesignableButton" customModule="WizHead" customModuleProvider="target">
+                                                <rect key="frame" x="277" y="0.0" width="98" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.55591823630000003" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MagicSchoolTwo" family="Magic School Two" pointSize="20"/>
+                                                <state key="normal" title="Quit Game">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dont Remember the spell?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiU-4A-fnw" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45.5" width="375" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="MagicSchoolTwo" family="Magic School Two" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aPF-V2-Q1X" secondAttribute="bottom" constant="8" id="0hN-NW-kEr"/>
+                                    <constraint firstItem="aPF-V2-Q1X" firstAttribute="top" secondItem="XiU-4A-fnw" secondAttribute="bottom" id="12w-d9-DO9"/>
+                                    <constraint firstAttribute="trailing" secondItem="aPF-V2-Q1X" secondAttribute="trailing" id="5U9-Fl-hQV"/>
+                                    <constraint firstAttribute="height" constant="100" id="BcA-Zg-8hP"/>
+                                    <constraint firstAttribute="trailing" secondItem="XiU-4A-fnw" secondAttribute="trailing" id="f6P-9G-kv8"/>
+                                    <constraint firstItem="XiU-4A-fnw" firstAttribute="leading" secondItem="gVO-wm-XJm" secondAttribute="leading" id="hlW-hW-6lm"/>
+                                    <constraint firstItem="aPF-V2-Q1X" firstAttribute="leading" secondItem="gVO-wm-XJm" secondAttribute="leading" id="sla-bY-uUY"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treasure" translatesAutoresizingMaskIntoConstraints="NO" id="WLS-Q0-dQ0">
+                                <rect key="frame" x="322" y="20" width="47" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="HPs-tU-Qv4"/>
+                                    <constraint firstAttribute="width" constant="47" id="fmr-7c-y2A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-Na-0WC">
+                                <rect key="frame" x="234" y="14" width="80" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="OGx-D9-58Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.85146335659898476" green="0.1273710939526114" blue="0.0073564590777018667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ce-9O-Hvn">
+                                <rect key="frame" x="162" y="11.5" width="52.5" height="55"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="47"/>
+                                <color key="textColor" red="0.85146335660000005" green="0.12737109399999999" blue="0.0073564590779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="vJU-11-xej" firstAttribute="top" secondItem="GtN-pn-YaR" secondAttribute="top" id="1z5-pR-huS"/>
+                            <constraint firstItem="4JW-EX-n3O" firstAttribute="centerX" secondItem="vJU-11-xej" secondAttribute="centerX" id="5Ug-t5-MTJ"/>
+                            <constraint firstAttribute="trailing" secondItem="gVO-wm-XJm" secondAttribute="trailing" id="9rV-PB-Y2y"/>
+                            <constraint firstItem="n8K-Na-0WC" firstAttribute="top" secondItem="GtN-pn-YaR" secondAttribute="top" constant="14" id="F2r-Xv-WbK"/>
+                            <constraint firstItem="gVO-wm-XJm" firstAttribute="leading" secondItem="jJD-r9-PEj" secondAttribute="leading" id="Gfe-Lc-Fuq"/>
+                            <constraint firstItem="WLS-Q0-dQ0" firstAttribute="top" secondItem="GtN-pn-YaR" secondAttribute="top" constant="20" id="H5I-Gv-7z0"/>
+                            <constraint firstItem="rGl-Of-d6x" firstAttribute="leading" secondItem="jJD-r9-PEj" secondAttribute="leading" constant="10" id="Nkk-Ow-B1n"/>
+                            <constraint firstItem="vJU-11-xej" firstAttribute="trailing" secondItem="jJD-r9-PEj" secondAttribute="trailing" id="Udp-fu-TBE"/>
+                            <constraint firstItem="vJU-11-xej" firstAttribute="leading" secondItem="jJD-r9-PEj" secondAttribute="leading" id="Umu-XE-9t3"/>
+                            <constraint firstItem="jJD-r9-PEj" firstAttribute="trailing" secondItem="rGl-Of-d6x" secondAttribute="trailing" constant="10" id="VNz-g8-hVo"/>
+                            <constraint firstItem="rGl-Of-d6x" firstAttribute="top" secondItem="GtN-pn-YaR" secondAttribute="top" constant="80" id="WNT-VR-T3m"/>
+                            <constraint firstItem="WLS-Q0-dQ0" firstAttribute="leading" secondItem="n8K-Na-0WC" secondAttribute="trailing" constant="8" id="cgH-Qc-8uj"/>
+                            <constraint firstItem="vJU-11-xej" firstAttribute="bottom" secondItem="jJD-r9-PEj" secondAttribute="bottom" id="fEm-sM-Cqe"/>
+                            <constraint firstItem="aYc-AR-Kt8" firstAttribute="leading" secondItem="jJD-r9-PEj" secondAttribute="leading" constant="20" id="gAl-hj-uS7"/>
+                            <constraint firstItem="n8K-Na-0WC" firstAttribute="centerY" secondItem="5Ce-9O-Hvn" secondAttribute="centerY" id="gK7-Ub-cIp"/>
+                            <constraint firstItem="5Ce-9O-Hvn" firstAttribute="centerX" secondItem="vJU-11-xej" secondAttribute="centerX" id="ljT-qj-nO4"/>
+                            <constraint firstItem="aYc-AR-Kt8" firstAttribute="top" secondItem="GtN-pn-YaR" secondAttribute="top" constant="20" id="qTV-Nb-mYd"/>
+                            <constraint firstItem="n8K-Na-0WC" firstAttribute="centerY" secondItem="WLS-Q0-dQ0" secondAttribute="centerY" id="sGp-12-Tcp"/>
+                            <constraint firstItem="jJD-r9-PEj" firstAttribute="bottom" secondItem="4JW-EX-n3O" secondAttribute="bottom" constant="80" id="tMf-1p-KH0">
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                            </constraint>
+                            <constraint firstItem="jJD-r9-PEj" firstAttribute="trailing" secondItem="WLS-Q0-dQ0" secondAttribute="trailing" constant="6" id="y3g-LF-a7d"/>
+                            <constraint firstAttribute="bottom" secondItem="gVO-wm-XJm" secondAttribute="bottom" constant="-56" id="zHm-mV-CM0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jJD-r9-PEj"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="vJU-11-xej" id="bJ2-Kf-X7h"/>
+                        <outlet property="darkCircleFillView" destination="Tot-8v-xfy" id="c3V-TW-FrS"/>
+                        <outlet property="gameScore" destination="n8K-Na-0WC" id="RIM-Ib-4wg"/>
+                        <outlet property="infoText" destination="rGl-Of-d6x" id="ZYi-jv-zj0"/>
+                        <outlet property="menuView" destination="gVO-wm-XJm" id="Wxi-To-wV1"/>
+                        <outlet property="object1" destination="4JW-EX-n3O" id="PZ1-1v-VqI"/>
+                        <outlet property="timerLabel" destination="5Ce-9O-Hvn" id="XB7-mN-u6a"/>
+                        <outlet property="toggleMenuButton" destination="pLh-UC-GB1" id="lBI-Pt-jjv"/>
+                        <segue destination="ofk-H8-gim" kind="presentation" identifier="gameOverOrSuccess" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="qCw-xN-0BU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDs-00-42Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1546" y="1409"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wyo-Dj-GSV">
+            <objects>
+                <viewController id="ofk-H8-gim" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TVx-Rq-49Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="17o-8n-wRC">
+                                <rect key="frame" x="67" y="171" width="240" height="373"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.71741224315068497" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="OgQ-vH-9rD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGL-Wm-xWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="1573.7631184407796"/>
+        </scene>
+        <!--Level1 View Controller-->
+        <scene sceneID="bqX-xz-y3t">
+            <objects>
+                <viewController restorationIdentifier="FirstVC" storyboardIdentifier="FirstVC" id="xdu-pf-CgC" customClass="Level1ViewController" customModule="WizHead" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AAr-Z3-lPS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parchment2" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="32V-Bc-mBr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alohomora" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6w-Y2-dAM" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="600" width="258.5" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="PBn-Dh-I0i">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="53"/>
+                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="100"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="hwG-K3-na5">
+                                <rect key="frame" x="0.0" y="109" width="375" height="449"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Wizarding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knf-rU-xBR" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="246.5" width="343" height="47"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gga-RX-7Km" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="310.5" width="343" height="47.5"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVR-Bp-OsO" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="379" width="343" height="47.5"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Your Phone &amp; Say " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTY-Zq-yva" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="562" width="343" height="35"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score : 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9G-bu-uf9" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="446.5" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock the Door by Casting The Charm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-gQ-igS" customClass="DesignableLabel" customModule="WizHead" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="RSW-Lz-bBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.65098039220000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowopacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowradius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowoffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="K76-wh-SOr">
+                                <rect key="frame" x="347" y="620" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4z8-Rf-r5a">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="ZDv-IC-OD5">
+                                <rect key="frame" x="-1.5" y="620" width="30" height="27"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="OHy-yt-AEi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="32V-Bc-mBr" firstAttribute="leading" secondItem="leO-Dh-hpu" secondAttribute="leading" id="3WH-lc-jEb"/>
+                            <constraint firstItem="32V-Bc-mBr" firstAttribute="top" secondItem="AAr-Z3-lPS" secondAttribute="top" id="3cr-FK-jTY"/>
+                            <constraint firstItem="xVR-Bp-OsO" firstAttribute="width" secondItem="gga-RX-7Km" secondAttribute="width" id="5n4-av-3xn"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="trailing" secondItem="Knf-rU-xBR" secondAttribute="trailing" id="9Zg-uG-R7v"/>
+                            <constraint firstItem="K76-wh-SOr" firstAttribute="leading" secondItem="H6w-Y2-dAM" secondAttribute="trailing" constant="30" id="AuI-al-vCr">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="trailing" secondItem="OTY-Zq-yva" secondAttribute="trailing" id="CKw-hS-WZV"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="width" secondItem="Knf-rU-xBR" secondAttribute="width" id="CU8-F2-yM9"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="top" secondItem="Knf-rU-xBR" secondAttribute="bottom" constant="17" id="DYZ-hE-HJN"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="trailing" secondItem="xVR-Bp-OsO" secondAttribute="trailing" id="Dpp-hE-8af"/>
+                            <constraint firstItem="K76-wh-SOr" firstAttribute="centerY" secondItem="H6w-Y2-dAM" secondAttribute="centerY" id="EXw-f1-fXL"/>
+                            <constraint firstItem="O9G-bu-uf9" firstAttribute="trailing" secondItem="xVR-Bp-OsO" secondAttribute="trailing" id="Eor-UM-Pg0"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="centerY" secondItem="32V-Bc-mBr" secondAttribute="centerY" id="FSq-z9-j8p"/>
+                            <constraint firstItem="32V-Bc-mBr" firstAttribute="trailing" secondItem="leO-Dh-hpu" secondAttribute="trailing" id="JyV-2Q-Mxz"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="leading" secondItem="xVR-Bp-OsO" secondAttribute="leading" id="LPg-D6-PSq"/>
+                            <constraint firstItem="hwG-K3-na5" firstAttribute="top" secondItem="AAr-Z3-lPS" secondAttribute="top" constant="109" id="Lka-3G-zTp"/>
+                            <constraint firstItem="H6w-Y2-dAM" firstAttribute="centerX" secondItem="32V-Bc-mBr" secondAttribute="centerX" id="PHP-3H-MeA"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="leading" secondItem="Knf-rU-xBR" secondAttribute="leading" id="R8e-YA-PWu"/>
+                            <constraint firstItem="O9G-bu-uf9" firstAttribute="leading" secondItem="xVR-Bp-OsO" secondAttribute="leading" id="RLq-i4-XwG"/>
+                            <constraint firstItem="hwG-K3-na5" firstAttribute="leading" secondItem="leO-Dh-hpu" secondAttribute="leading" id="VmO-b2-u1o">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="hwG-K3-na5" firstAttribute="centerX" secondItem="32V-Bc-mBr" secondAttribute="centerX" id="W5p-Bg-fy3"/>
+                            <constraint firstItem="H6w-Y2-dAM" firstAttribute="top" secondItem="K76-wh-SOr" secondAttribute="top" constant="-20" id="WsP-GI-ZIX"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="leading" secondItem="OTY-Zq-yva" secondAttribute="leading" id="XYC-Jb-flm"/>
+                            <constraint firstItem="nrD-gQ-igS" firstAttribute="trailing" secondItem="Knf-rU-xBR" secondAttribute="trailing" id="Xd6-f6-Kb7"/>
+                            <constraint firstItem="gga-RX-7Km" firstAttribute="height" secondItem="Knf-rU-xBR" secondAttribute="height" id="Y61-1R-ruv"/>
+                            <constraint firstItem="H6w-Y2-dAM" firstAttribute="top" secondItem="OTY-Zq-yva" secondAttribute="bottom" constant="3" id="aZa-K4-sNM"/>
+                            <constraint firstItem="H6w-Y2-dAM" firstAttribute="centerY" secondItem="ZDv-IC-OD5" secondAttribute="centerY" id="aoH-J3-6Ee"/>
+                            <constraint firstItem="hwG-K3-na5" firstAttribute="trailing" secondItem="leO-Dh-hpu" secondAttribute="trailing" id="dep-s9-kVo">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-30"/>
+                            </constraint>
+                            <constraint firstItem="nrD-gQ-igS" firstAttribute="leading" secondItem="Knf-rU-xBR" secondAttribute="leading" id="fI6-5p-SKW"/>
+                            <constraint firstItem="xVR-Bp-OsO" firstAttribute="top" secondItem="gga-RX-7Km" secondAttribute="bottom" constant="21" id="gmN-AL-q4I"/>
+                            <constraint firstItem="H6w-Y2-dAM" firstAttribute="top" secondItem="ZDv-IC-OD5" secondAttribute="top" constant="-20" id="jRX-Yz-xUr"/>
+                            <constraint firstItem="O9G-bu-uf9" firstAttribute="top" secondItem="xVR-Bp-OsO" secondAttribute="bottom" constant="20" id="jW2-9y-Hmv"/>
+                            <constraint firstItem="leO-Dh-hpu" firstAttribute="trailing" secondItem="Knf-rU-xBR" secondAttribute="trailing" constant="16" id="l3f-Hz-gOG"/>
+                            <constraint firstItem="H6w-Y2-dAM" firstAttribute="leading" secondItem="ZDv-IC-OD5" secondAttribute="trailing" constant="30" id="lg0-ec-IMc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="103"/>
+                            </constraint>
+                            <constraint firstItem="xVR-Bp-OsO" firstAttribute="height" secondItem="gga-RX-7Km" secondAttribute="height" id="mqn-RS-8MR"/>
+                            <constraint firstItem="hwG-K3-na5" firstAttribute="top" secondItem="nrD-gQ-igS" secondAttribute="bottom" constant="10" id="qSq-Ff-3Mb"/>
+                            <constraint firstItem="32V-Bc-mBr" firstAttribute="bottom" secondItem="leO-Dh-hpu" secondAttribute="bottom" id="riM-qE-WJd"/>
+                            <constraint firstItem="H6w-Y2-dAM" firstAttribute="bottom" secondItem="32V-Bc-mBr" secondAttribute="bottom" constant="-36" id="t1c-Dm-tvL">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="hwG-K3-na5" firstAttribute="centerY" secondItem="32V-Bc-mBr" secondAttribute="centerY" id="tlH-hS-Fp5">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-32"/>
+                            </constraint>
+                            <constraint firstItem="Knf-rU-xBR" firstAttribute="leading" secondItem="leO-Dh-hpu" secondAttribute="leading" constant="16" id="ttf-5H-Bt8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="leO-Dh-hpu"/>
+                    </view>
+                    <connections>
+                        <outlet property="alohomora" destination="H6w-Y2-dAM" id="2Dv-Zg-erE"/>
+                        <outlet property="andLabel" destination="gga-RX-7Km" id="c81-Dg-8y4"/>
+                        <outlet property="gemLabel" destination="Knf-rU-xBR" id="WiI-1k-ogN"/>
+                        <outlet property="philosopherLabel" destination="xVR-Bp-OsO" id="dyw-48-5JH"/>
+                        <outlet property="sayLabel" destination="OTY-Zq-yva" id="i2j-Qw-ubU"/>
+                        <outlet property="stoneLabel" destination="O9G-bu-uf9" id="mGW-bs-A71"/>
+                        <outlet property="unlockLabel" destination="nrD-gQ-igS" id="8of-BF-aMo"/>
+                        <segue destination="8H2-Sp-eCy" kind="show" identifier="level1Segue" id="WWq-UG-QjF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6k-mq-0jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="743"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow-down.svg" width="30" height="18"/>
+        <image name="BrokenCauldron" width="300" height="281"/>
+        <image name="back" width="40" height="40"/>
+        <image name="background" width="4000" height="2600"/>
+        <image name="bomb" width="150" height="150"/>
+        <image name="diamond2" width="360" height="360"/>
+        <image name="door" width="766" height="720"/>
+        <image name="hat3" width="366" height="360"/>
+        <image name="idea-parchment2" width="660" height="720"/>
+        <image name="left" width="193" height="195"/>
+        <image name="parchment2" width="720" height="720"/>
+        <image name="right" width="207" height="203"/>
+        <image name="settings" width="50" height="50"/>
+        <image name="treasure" width="50" height="48"/>
+        <image name="wand3" width="105" height="102"/>
+        <image name="wand4" width="218" height="213"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WWE-4T-8SJ"/>
+    </inferredMetricsTieBreakers>
+</document>
